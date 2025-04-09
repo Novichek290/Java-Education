@@ -3,6 +3,7 @@ package controller;
 import core1.EvenNumber;
 import core1.MaxNumber;
 import core2.DeleteDuplicates;
+import core2.SecondMaxElement;
 import core2.UniqueElement;
 
 import java.util.Scanner;
@@ -15,6 +16,7 @@ public class Controller {
                 2: Which number is max?
                 3: Which is unique numbers?
                 4: Delete duplicates from List
+                5: Second max element
                 10: Quit
                 """);
         Scanner sc = new Scanner(System.in);
@@ -44,6 +46,10 @@ public class Controller {
                 case 4:
                 System.out.println("The collection after deleted duplicates: ");
                     DeleteDuplicates.dD();
+                break;
+            case 5:
+                System.out.println("Second max element is: ");
+                SecondMaxElement.secindMaxElement();
                 break;
             default:
                 System.out.println("*************************\nWRONG NUMBER\n*************************");
