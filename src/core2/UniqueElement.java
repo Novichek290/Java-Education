@@ -10,7 +10,9 @@ import java.util.List;
 //Пример:
 
 public class UniqueElement {
-    public static List<Integer> isInList(List<Integer> list1, List<Integer> list2) {
+    public static List<Integer> isInList() {
+        List <Integer> list1 = List.of(0, 1 , 2 , 3 , 4 , 5);
+        List <Integer> list2 = List.of(3 , 4 , 7);
         List<Integer> result = new ArrayList<>();
 
         for(Integer num1 : list1) {
