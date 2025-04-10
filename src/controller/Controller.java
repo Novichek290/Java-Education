@@ -3,9 +3,11 @@ package controller;
 import core1.EvenNumber;
 import core1.MaxNumber;
 import core2.DeleteDuplicates;
+import core2.FrequencyOfWords;
 import core2.SecondMaxElement;
 import core2.UniqueElement;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class Controller {
@@ -17,6 +19,7 @@ public class Controller {
                 3: Which is unique numbers?
                 4: Delete duplicates from List
                 5: Second max element
+                6: Words frequency
                 10: Quit
                 """);
         Scanner sc = new Scanner(System.in);
@@ -50,6 +53,12 @@ public class Controller {
             case 5:
                 System.out.println("Second max element is: ");
                 SecondMaxElement.secindMaxElement();
+                break;
+            case 6:
+                System.out.println("Frequency Of Words:");
+                FrequencyOfWords fow = new FrequencyOfWords();
+                Map<String, Integer> wordCount = fow.frequency();
+                System.out.println("*************************\n" + wordCount + "\n*************************");
                 break;
             default:
                 System.out.println("*************************\nWRONG NUMBER\n*************************");
